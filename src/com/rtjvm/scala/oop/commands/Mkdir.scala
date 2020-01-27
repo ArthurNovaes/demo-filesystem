@@ -29,7 +29,6 @@ class Mkdir(name: String)  extends Command {
         currentDirectory.replaceEntry(oldEntry.name, updateStructure(oldEntry, path.tail, newEntry))
       }
     }
-
     val wd = state.wd
 
     // 1. all the directories in the full path
