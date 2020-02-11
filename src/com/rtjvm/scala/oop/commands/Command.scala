@@ -15,6 +15,7 @@ object Command {
   val CD = "cd"
   val RM = "rm"
   val ECHO = "echo"
+  val CAT = "cat"
 
   def emptyCommand: Command = new Command {
     override def apply(state: State): State = state
